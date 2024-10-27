@@ -1,0 +1,87 @@
+.task-container{
+    margin: 30px auto 0;
+    background-color: rgb(239, 239, 239);
+    width: 600px;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.task-container .inp{
+    position: relative;
+    background-color: rgb(13, 141, 134);
+    padding: 15px;
+}
+.task-container .inp input{
+    background-color:rgb(111, 191, 187) ;
+    outline: none;
+    width: 80%;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+}
+.task-container .inp .sp{
+    background-color: white;
+    border-radius: 50%;
+    color:rgb(13, 141, 134) ;
+    cursor: pointer;
+    width: 43px;
+    height: 43x;
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    right: 105px;
+    line-height: 43px;
+    transition: transform .1s;
+}
+.task-container .inp span:hover{
+    transform: rotate(90deg);
+}
+.text{
+    padding: 10px;
+}
+.text .no-tasks{
+    color: #777;
+}
+.text .task-box{
+    display: block;
+}
+.task-container .text > span{
+    background-color: white;
+    display: block;
+    padding: 10px;
+} 
+.task-container .text > span:not(:last-child){
+    margin-bottom: 10px;
+}
+.text .task-box.finished {
+    text-decoration: line-through;
+}
+.task-container .text .delete{
+    float: right;
+    background-color: #E91E63;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.states{
+    margin: 10px auto 0;
+    width: 600px;
+}
+.states .tasks{
+    float: left;
+}
+.states .complete{
+    float: right;
+}
+.states .tasks span{
+    background-color: #E91E63;
+    color: white;
+    padding: 3px;
+}
+.states .complete span{
+    background-color: rgb(119, 119, 170);
+    color: white;
+    padding: 3px;
+}
